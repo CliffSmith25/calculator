@@ -54,6 +54,7 @@
 <style>
 #app {
   min-width: 320px;
+  max-width: 780px; 
   margin: 15px;
   background-color: #0b0c10;
   border-radius: 15px;
