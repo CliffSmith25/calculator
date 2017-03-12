@@ -31,6 +31,9 @@
       <button v-on:click="stackUpdate('/')" class="btn">/</button>
       <button v-on:click="stackUpdate('=')" class="btn">=</button>
     </div>
+    <div id="source">
+      <a href="https://github.com/CliffSmith25/calculator">View the source code here</a>
+    </div>
   </div>
 </template>
 
@@ -52,13 +55,20 @@
 </script>
 
 <style>
+#source {
+  text-align: center;
+  margin-top: 5px;
+}
+a {
+  text-align: center;
+  color: white;
+}
 #app {
   min-width: 320px;
-  max-width: 780px; 
-  margin: 15px;
+  max-width: 1080px; 
   background-color: #0b0c10;
-  border-radius: 15px;
   padding: 5px;
+  margin-top: 50px;
 }
 
 .container {
@@ -67,16 +77,17 @@
 
 #display {
   background-color: #1f2833;
-  border-radius: 10px;
 }
 
 .btn {
   text-align: center;
   width: 16%;
   height: 75px;
-  margin: 10px;
+  margin-top: 10px;
+  margin-left: 2%;
+  margin-right: 2%;
+  margin-bottom: 10px;
   font-size: 2em;
-  border-radius: 50%;
   background-color: #45a29e;
   border-color: #66fcf1;
   color: white;
